@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions de Gestion - Sénégal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">GestionPro</div>
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-links">
+                <a href="#home">Accueil</a>
+                <a href="#services">Services</a>
+                <a href="#features">Fonctionnalités</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>Gérez votre entreprise ou école sans stress, où que vous soyez.</h1>
+            <p>Solutions de gestion sur mesure pour les entreprises et écoles au Sénégal</p>
+            <a href="https://wa.me/221707533403" class="cta-button">
+                <i class="fab fa-whatsapp"></i> Demander une démo gratuite
+            </a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Ce que je propose</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-building"></i>
+                <h3>Pour les entreprises</h3>
+                <ul>
+                    <li>Gestion des produits et stock</li>
+                    <li>Suivi des ventes et factures</li>
+                    <li>Gestion des employés</li>
+                    <li>Suivi client</li>
+                    <li>Rapports détaillés</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-school"></i>
+                <h3>Pour les écoles</h3>
+                <ul>
+                    <li>Gestion des élèves</li>
+                    <li>Suivi des classes</li>
+                    <li>Gestion des notes</li>
+                    <li>Bulletins automatiques</li>
+                    <li>Suivi des paiements</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Fonctionnalités clés</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Interface simple</h3>
+                <p>Accessible sur mobile et desktop</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-chart-line"></i>
+                <h3>Rapports automatiques</h3>
+                <p>Analyses détaillées en temps réel</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-bell"></i>
+                <h3>Alertes intelligentes</h3>
+                <p>Notifications pour stock et paiements</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-users-cog"></i>
+                <h3>Rôles utilisateurs</h3>
+                <p>Gestion des accès personnalisée</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-lock"></i>
+                <h3>Accès sécurisé</h3>
+                <p>Protection de vos données</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Section -->
+    <section class="special-offer">
+        <div class="offer-content">
+            <h2>Offre spéciale</h2>
+            <div class="offer-items">
+                <div class="offer-item">
+                    <i class="fas fa-server"></i>
+                    <h3>Hébergement gratuit</h3>
+                    <p>Pendant 5 ans après l'achat</p>
+                </div>
+                <div class="offer-item">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Aucune charge mensuelle</h3>
+                    <p>Payez une seule fois</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Me Section -->
+    <section class="why-me">
+        <h2>Pourquoi moi ?</h2>
+        <div class="benefits-grid">
+            <div class="benefit">
+                <i class="fas fa-code"></i>
+                <h3>Développeur expérimenté</h3>
+                <p>Expert local au Sénégal</p>
+            </div>
+            <div class="benefit">
+                <i class="fas fa-tags"></i>
+                <h3>Prix accessibles</h3>
+                <p>Solutions adaptées à votre budget</p>
+            </div>
+            <div class="benefit">
+                <i class="fas fa-desktop"></i>
+                <h3>Démos avant achat</h3>
+                <p>Testez avant de décider</p>
+            </div>
+            <div class="benefit">
+                <i class="fas fa-headset"></i>
+                <h3>Support local</h3>
+                <p>Assistance rapide et efficace</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://wa.me/221707533403" class="whatsapp-button">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Menu hamburger functionality
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const hamburger = document.querySelector('.hamburger');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll reveal animation
+        const scrollReveal = () => {
+            const elements = document.querySelectorAll('.service-card, .feature, .offer-item, .benefit');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', scrollReveal);
+        window.addEventListener('load', scrollReveal);
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
